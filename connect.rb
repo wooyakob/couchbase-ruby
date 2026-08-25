@@ -1,5 +1,5 @@
-require "couchbase"
 require "dotenv/load"
+require "couchbase"
 
 options = Couchbase::Options::Cluster.new
 options.authenticate(ENV.fetch("USERNAME"), ENV.fetch("PASS"))
